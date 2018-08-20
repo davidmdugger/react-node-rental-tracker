@@ -4,13 +4,20 @@
   "description": "Add rentals to help compare between location, price, and living situation",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client \"",
+    "start": "node server.js"
   },
   "author": "David Dugger",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
     "express": "^4.16.3",
-    "mongoose": "^5.2.9"
-  }
+    "mongoose": "^5.2.9",
+    "nodemon": "^1.18.3"
+  },
+  "proxy": "http://localhost:8080"
 }
