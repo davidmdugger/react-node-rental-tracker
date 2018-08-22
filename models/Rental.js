@@ -7,11 +7,11 @@ const RentalSchema = new Schema({
     type: String,
     require: true
   },
-  price: {
+  rent: {
     type: String,
     require: true
   }
-  // leaseTerms: {
+  // leaseLength: {
   //   type: String,
   //   require: true
   // },
@@ -30,7 +30,13 @@ const RentalSchema = new Schema({
   // phone: {
   //   type: String,
   //   require: true
+  // },
+  // neighborhood: {
+  //   id: {
+  //     type: Schema.Types.ObjectId,
+  //     ref: "Neiborhood"
+  //   }
   // }
 });
 
-module.exports = Rental = mongoose.model("rental", RentalSchema);
+module.exports = Rental = mongoose.model("Rental", RentalSchema);

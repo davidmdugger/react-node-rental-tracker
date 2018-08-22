@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const rentals = require("./routes/api/rentals");
+const neighborhoods = require("./routes/api/neighborhoods");
 
 // DB CONFIG
 const db = require("./config/keys").mongoURI;
@@ -21,5 +22,6 @@ mongoose
 
 // use imported routes
 app.use("/api/rentals", rentals);
+app.use("/api/neighborhoods", neighborhoods);
 
 app.listen(port, () => console.log(`Server is running on ${port}`));

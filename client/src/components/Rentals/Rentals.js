@@ -24,6 +24,7 @@ class Rentals extends Component {
     const { rentals } = this.state;
     let title;
     let showRentals;
+
     if (rentals.length < 1) {
       title = <h3 className="rentals-main-title">Rentals are empty</h3>;
     } else {

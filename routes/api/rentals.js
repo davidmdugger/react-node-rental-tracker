@@ -3,7 +3,7 @@ const express = require("express"),
   mongoose = require("mongoose");
 
 // load Rental model
-const Rental = require("../../models/Rentals");
+const Rental = require("../../models/Rental");
 
 // @route GET api/rentals/test
 // @desc tests our a rentals route
