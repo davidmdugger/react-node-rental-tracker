@@ -31,7 +31,7 @@ class Rentals extends Component {
       title = <h3 className="rentals-main-title">Here are your rentals</h3>;
       showRentals = this.state.rentals.map((rental, i) => {
         return (
-          <Link key={i} to={`/${rental._id}`}>
+          <Link key={i} to={`/rentals/${rental._id}`}>
             <Rental
               id={rental._id}
               address={rental.address}

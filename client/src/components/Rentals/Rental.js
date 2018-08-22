@@ -2,6 +2,7 @@ import React from "react";
 
 const Rental = props => {
   const { id, address, price } = props;
+  console.log(props);
   return (
     <div key={id} className="rental">
       <img src="http://via.placeholder.com/300x300" alt={address} />
